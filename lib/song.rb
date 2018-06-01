@@ -25,7 +25,6 @@ class Song
     attr_accessor col_name.to_sym
       binding.pry
   end
-  binding.pry
   def initialize(options={})
     options.each do |property, value|
       self.send("#{property}=", value)
